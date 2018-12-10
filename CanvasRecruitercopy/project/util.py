@@ -136,7 +136,10 @@ def switch_student(course, group, student):
 
 def evaluate_prefs(course):
     ''' evaluate the performance of the group configuration based on the soft requirements'''
+
     eval_list = []
+
+    # go through the list of students and a list for each student containing the satisfactions of their preferences
     for student in course.assigned_students:
         plist = []
         for preference in student.preferences:
@@ -144,10 +147,10 @@ def evaluate_prefs(course):
 
         eval_list.append(plist)
 
-
     total_satisfied = 0
     total_n_satisfied = 0
 
+    # determine the total amount of preferences that are satisfied and not satisfied
     for plist in eval_list:
         satisfaction_count = 0
         for preference in plist:
@@ -156,12 +159,13 @@ def evaluate_prefs(course):
             else:
                 total_satisfied += 1
 
+    # determine the satisfaction rate (percentage of preferences satisfied)
     satisfaction_rate = (float(total_satisfied) / (float(total_satisfied) + float(total_n_satisfied))) * 100
+    # determine the average amount of preferences satisfied per student
     average_satisfaction = float(total_satisfied) / float(len(course.assigned_students))
 
     print('The total amount of preferences that were satisfied is {}'.format(total_satisfied))
     print('The total amount of preferences that were not satisfied is {}'.format(total_n_satisfied))
     print('The satisfaction rate is {}'.format(satisfaction_rate))
     print('The average amount of satisfied preferences per student is {}'.format(average_satisfaction))
-
 
