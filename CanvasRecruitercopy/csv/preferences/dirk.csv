@@ -1,0 +1,5 @@
+pref_name;type;value;
+pref_role;string;programming
+anti_role;string;communication
+work_with;string;tristan
+not_work_with;string;manon
