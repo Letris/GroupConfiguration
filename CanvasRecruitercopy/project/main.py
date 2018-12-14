@@ -1,5 +1,5 @@
 from classes import Instance
-from main_functions import specify, determine_reqs_and_prefs, set_preferences, initialize_students, propose, evaluate_prefs
+from main_functions import specify, determine_reqs_and_prefs, set_preferences, initialize_students, propose, evaluate_prefs, verify_hard
 
 #--------------------------------------------------------------- Parameters
 
@@ -30,10 +30,11 @@ determine_reqs_and_prefs(req_file, course)
 set_preferences(pref_dir, course.unassigned_students)
 
 # propose the first initialization based on soft requirements
-propose(course)
+course = propose(course)
 
 # evaluate the performance of the first initialization
 evaluate_prefs(course)
 
+course = verify_hard(course)
 
-
+print('configuration success')
