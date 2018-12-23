@@ -1,0 +1,11 @@
+stud_name;id;courses;prev_comf;prev_names;grades;self_eval;
+tristan;2577549;[KE];True;[manon]; {'presenting' :6, 'programming' : 7, 'writing'  :8, 'modelling'  :9, 'organising'  :10, 'communication'  :6, 'leadership':7}
+manon;2899234;[KE];False;[tristan];{'presenting' :7, 'programming' : 8, 'writing'  :9, 'modelling'  :10, 'organising'  :6, 'communication'  :7, 'leadership':8}
+john;2345603;[KE];True;[eva];      {'presenting' :8, 'programming' : 9, 'writing'  :10, 'modelling'  :6, 'organising'  :7, 'communication'  :8, 'leadership':9};
+eva;2457908;[KE];False;[john];     {'presenting' :9, 'programming' : 10, 'writing'  :6, 'modelling'  :7, 'organising'  :8, 'communication'  :9, 'leadership':10};
+jesse;34567298;[KE];True;[emma];   {'presenting' :10, 'programming' : 6, 'writing'  :7, 'modelling'  :8, 'organising'  :9, 'communication'  :10, 'leadership':6};
+emma;2385345;[KE];False;[jesse];   {'presenting' :6, 'programming' : 7, 'writing'  :8, 'modelling'  :9, 'organising'  :10, 'communication'  :6, 'leadership':7};
+julia;2765823;[KE];True;[dirk];    {'presenting' :7, 'programming' : 8, 'writing'  :9, 'modelling'  :10, 'organising'  :6, 'communication'  :7, 'leadership':8};
+dirk;7889654;[KE];False;[julia];   {'presenting' :8, 'programming' : 9, 'writing'  :10, 'modelling'  :6, 'organising'  :7, 'communication'  :8, 'leadership':9};
+rick;6758934;[KE];True;[jan];      {'presenting' :9, 'programming' : 10, 'writing'  :6, 'modelling'  :7, 'organising'  :8, 'communication'  :9, 'leadership':10};
+jan;7866954;[KE];True;[rick];      {'presenting' :10, 'programming' : 6, 'writing'  :7, 'modelling'  :8, 'organising'  :9, 'communication'  :10, 'leadership':6};

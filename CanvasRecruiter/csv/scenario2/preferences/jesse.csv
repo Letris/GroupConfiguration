@@ -1,0 +1,5 @@
+pref_name;type;value;
+pref_role;string;programming
+anti_role;string;presenting
+work_with;string;john
+not_work_with;string;jan
